@@ -16,6 +16,7 @@
   > - Generate an RSA private key, of size 2048, and output it to a file named key.pem:
   > 
   >       $ openssl genpkey -aes-256-cbc -algorithm RSA -out key2.pem -pkeyopt rsa_keygen_bits:2048
+  > - Enter PEM pass phrase and keep phrase as secret key
   > - Extract the public key from the key pair, which can be used in a certificate: <br>
   > 
   >       $ openssl rsa -in key2.pem -outform PEM -pubout -out public2.pem
